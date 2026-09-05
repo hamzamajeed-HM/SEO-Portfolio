@@ -1,0 +1,1576 @@
+<!DOCTYPE html>
+<!--
+  ============================================================
+  CONFIG — production domain
+  Replace PRODUCTION_DOMAIN below with the live domain before
+  deploying. It drives canonical, Open Graph, Twitter and the
+  JSON-LD url/image fields. Search this file for the token
+  "hamza-majeed-seo.netlify.app" to find every place it needs to change.
+  ============================================================
+-->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hamza Majeed | SEO Specialist & WordPress Webmaster</title>
+<meta name="description" content="SEO Specialist and WordPress Webmaster with 4+ years in technical SEO, Core Web Vitals and WordPress development. Measurable evidence from client and self-initiated projects.">
+<meta name="theme-color" content="#0A1420">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Hamza Majeed | SEO Specialist & WordPress Webmaster">
+<meta property="og:description" content="Technical SEO audits and the WordPress build, handled by one person. Evidence from a 3+ year client engagement, a technical audit for a Dubai charter brand, and self-initiated builds.">
+<meta property="og:url" content="https://hamza-majeed-seo.netlify.app/">
+<meta property="og:image" content="https://hamza-majeed-seo.netlify.app/images/hamza-majeed.jpg">
+<meta property="og:image:alt" content="Portrait of Hamza Majeed, SEO Specialist and WordPress Webmaster">
+<meta property="og:locale" content="en_US">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Hamza Majeed | SEO Specialist & WordPress Webmaster">
+<meta name="twitter:description" content="Technical SEO audits and the WordPress build, handled by one person. Evidence-backed case studies, not a template portfolio.">
+<meta name="twitter:url" content="https://hamza-majeed-seo.netlify.app/">
+<meta name="twitter:image" content="https://hamza-majeed-seo.netlify.app/images/hamza-majeed.jpg">
+
+<link rel="canonical" href="https://hamza-majeed-seo.netlify.app/">
+<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Hamza Majeed",
+  "jobTitle": "SEO Specialist & WordPress Webmaster",
+  "url": "https://hamza-majeed-seo.netlify.app/",
+  "email": "mailto:hamzamajeed.hm1996@gmail.com",
+  "image": "https://hamza-majeed-seo.netlify.app/images/hamza-majeed.jpg",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Karachi",
+    "addressCountry": "PK"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/in/hamza-majeed98"
+  ],
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "University of Gujrat"
+  },
+  "knowsAbout": [
+    "Technical SEO", "On-Page SEO", "Off-Page SEO", "Local SEO", "International SEO",
+    "Core Web Vitals", "Schema Markup", "Google Business Profile Optimization","WordPress", "Elementor", "Shopify",
+    "WooCommerce", "Google Analytics 4", "Google Search Console", "Google Tag Manager",
+    "Link Building", "Python", "Data Analysis"
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Pacifico&display=swap" rel="stylesheet">
+
+<style>
+/* ============================================================
+   TOKENS
+
+   SHAPE SYSTEM (documented, applied consistently):
+   - radius-soft (10/16/24px): photography, CTAs, containers, forms
+   - radius-0 (sharp): evidence / data / stat / credential cards, i.e.
+     anything presenting a measured number or a verifiable claim
+   - radius-pill (999px): buttons, chips, status tags, nav
+
+   COLOR SYSTEM: one accent (teal) used identically everywhere.
+   Status chips are the one documented exception: implemented (teal),
+   diagnostic (amber), verified (teal-strong), concept (slate): these
+   carry real semantic meaning about how a case study should be read,
+   not decoration.
+   ============================================================ */
+:root{
+  --bg:#0A1420;
+  --bg-elevated:#0E1826;
+  --surface:#121F33;
+  --surface-2:#0F1B2C;
+  --border:rgba(255,255,255,0.09);
+  --border-strong:rgba(255,255,255,0.16);
+  --text:#EAF0F1;
+  --text-dim:#9FB0C3;
+  --text-faint:#6C7C90;
+
+  --teal:#2DD4BF;
+  --teal-dim:rgba(45,212,191,0.14);
+  --teal-strong:#5EEAD4;
+
+  --amber:#F2A93C;
+  --amber-dim:rgba(242,169,60,0.14);
+  --slate:#8FA6C7;
+  --slate-dim:rgba(143,166,199,0.14);
+
+  --danger:#F2734C;
+
+  --font-display:'Space Grotesk', sans-serif;
+  --font-body:'Inter', sans-serif;
+  --font-mono:'JetBrains Mono', monospace;
+  --font-script:'Pacifico', cursive;
+
+  /* CTA gradient - documented exception, used ONLY on the primary
+     "Let's Work Together" call-to-action (nav + mobile drawer),
+     nowhere else. Teal anchors the brand; indigo gives it lift. */
+  --cta-grad:linear-gradient(135deg, var(--teal) 0%, #6C7CF5 100%);
+
+  --radius-sm:10px;
+  --radius-md:16px;
+  --radius-lg:24px;
+  --radius-pill:999px;
+  --maxw:1180px;
+  --shadow-lift:0 20px 50px -20px rgba(0,0,0,0.55);
+  --ease:cubic-bezier(.22,.7,.24,1);
+}
+
+[data-theme="light"]{
+  --bg:#F5F6FA;
+  --bg-elevated:#FFFFFF;
+  --surface:#FFFFFF;
+  --surface-2:#F0F2F7;
+  --border:rgba(10,20,32,0.10);
+  --border-strong:rgba(10,20,32,0.18);
+  --text:#0A1420;
+  --text-dim:#4C5A6C;
+  --text-faint:#7E8CA0;
+  --teal:#0C9C8A;
+  --teal-dim:rgba(12,156,138,0.10);
+  --teal-strong:#0A7D6F;
+  --amber:#B3690A;
+  --amber-dim:rgba(179,105,10,0.10);
+  --slate:#4C6690;
+  --slate-dim:rgba(76,102,144,0.10);
+  --shadow-lift:0 20px 50px -24px rgba(10,20,32,0.25);
+}
+
+*,*::before,*::after{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto;}
+  *,*::before,*::after{animation-duration:0.001ms !important;animation-iteration-count:1 !important;transition-duration:0.001ms !important;scroll-behavior:auto !important;}
+}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  font-family:var(--font-body);
+  font-size:16px;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+  transition:background .3s ease, color .3s ease;
+}
+img,svg{max-width:100%;display:block;}
+a{color:inherit;text-decoration:none;}
+ul{margin:0;padding:0;list-style:none;}
+h1,h2,h3,h4{font-family:var(--font-display);font-weight:600;margin:0;letter-spacing:-0.01em;text-wrap:balance;}
+p{margin:0;}
+button{font-family:inherit;cursor:pointer;background:none;border:none;color:inherit;text-align:left;}
+::selection{background:var(--teal);color:#04120F;}
+
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;}
+
+.skip-link{
+  position:absolute;top:-100px;left:16px;z-index:200;
+  background:var(--teal);color:#04120F;padding:10px 16px;border-radius:8px;
+  font-family:var(--font-mono);font-size:13px;transition:top .2s var(--ease);
+}
+.skip-link:focus{top:16px;}
+
+:focus-visible{outline:2px solid var(--teal);outline-offset:3px;border-radius:4px;}
+
+.wrap{max-width:var(--maxw);margin:0 auto;padding-inline:24px;}
+
+.eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-family:var(--font-mono);font-size:13px;color:var(--teal);
+  letter-spacing:0.02em;margin-bottom:14px;
+}
+.eyebrow::before{content:'';width:16px;height:1px;background:var(--teal);display:inline-block;}
+
+.section-head{max-width:640px;margin-bottom:48px;}
+.section-head h2{font-size:clamp(28px,4vw,40px);line-height:1.15;}
+.section-head .sub{color:var(--text-dim);margin-top:14px;font-size:16.5px;line-height:1.6;}
+
+section{padding:104px 0;position:relative;}
+section.tight{padding:88px 0;}
+
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s var(--ease), transform .7s var(--ease);}
+.reveal.in{opacity:1;transform:translateY(0);}
+
+/* status chips - the one documented semantic-color exception */
+.chip-row{display:flex;flex-wrap:wrap;gap:8px;}
+.status-chip{
+  font-family:var(--font-mono);font-size:10.5px;letter-spacing:.05em;text-transform:uppercase;
+  padding:5px 11px;border-radius:var(--radius-pill);white-space:nowrap;font-weight:500;
+  border:1px solid transparent;
+}
+.status-implemented{color:var(--teal-strong);background:var(--teal-dim);border-color:rgba(45,212,191,0.3);}
+.status-verified{color:var(--teal-strong);background:var(--teal-dim);border-color:rgba(45,212,191,0.3);}
+.status-diagnostic{color:var(--amber);background:var(--amber-dim);border-color:rgba(242,169,60,0.3);}
+.status-concept{color:var(--slate);background:var(--slate-dim);border-color:rgba(143,166,199,0.3);}
+
+/* evidence / data card family: sharp corners, always */
+.evidence-card{
+  border:1px solid var(--border);border-radius:0;background:var(--surface);
+  padding:18px 20px;
+}
+.evidence-card .ev-label{font-family:var(--font-mono);font-size:10.5px;color:var(--text-faint);text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px;}
+.evidence-card .ev-value{font-family:var(--font-display);font-size:26px;color:var(--text);line-height:1;}
+.evidence-card .ev-note{font-family:var(--font-mono);font-size:11px;color:var(--text-faint);margin-top:6px;}
+
+/* ============================================================
+   NAV
+   ============================================================ */
+header.site-nav{
+  --nav-progress:0;
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  background:color-mix(in srgb, var(--bg) calc(var(--nav-progress) * 82%), transparent);
+  backdrop-filter:blur(calc(var(--nav-progress) * 12px)) saturate(140%);
+  -webkit-backdrop-filter:blur(calc(var(--nav-progress) * 12px)) saturate(140%);
+  border-bottom:1px solid color-mix(in srgb, var(--border-strong) calc(var(--nav-progress) * 100%), transparent);
+  box-shadow:0 8px 26px -20px rgba(0,0,0,calc(var(--nav-progress) * 0.5));
+  transition:background .22s ease, backdrop-filter .22s ease, border-color .22s ease, box-shadow .22s ease;
+}
+#navSentinel{position:absolute;top:0;left:0;height:130px;width:1px;pointer-events:none;}
+.nav-inner{
+  max-width:var(--maxw);margin:0 auto;padding:13px 24px;
+  display:flex;align-items:center;justify-content:space-between;gap:20px;
+}
+
+/* --- logo: script wordmark + tracked mono surname + tagline --- */
+.logo{display:flex;align-items:center;gap:12px;min-width:0;}
+.logo-word{display:flex;align-items:baseline;gap:7px;flex-shrink:0;transition:transform .2s var(--ease);}
+.logo:hover .logo-word{transform:translateY(-1px);}
+.logo:active .logo-word{transform:translateY(0) scale(.98);}
+.logo-script{font-family:var(--font-script);font-size:24px;line-height:1;color:var(--text);}
+.logo-surname{font-family:var(--font-mono);font-size:11.5px;font-weight:600;letter-spacing:.16em;color:var(--text-dim);}
+.logo-tagline{
+  display:flex;align-items:center;gap:8px;padding-left:14px;margin-left:2px;
+  border-left:1px solid var(--border-strong);
+  font-family:var(--font-mono);font-size:12px;color:var(--text-faint);white-space:nowrap;
+}
+.logo-tagline .tdot{width:5px;height:5px;border-radius:50%;background:var(--teal);flex-shrink:0;}
+@media (max-width:1180px){.logo-tagline{display:none;}}
+
+.nav-links{display:flex;align-items:center;gap:2px;}
+.nav-links a{
+  position:relative;font-family:var(--font-mono);font-size:13.5px;color:var(--text-dim);
+  padding:9px 14px;border-radius:8px;transition:color .2s ease, background .2s ease;
+}
+.nav-links a:hover{color:var(--text);background:var(--surface);}
+.nav-links a.active{color:var(--teal);}
+.nav-links a.active::after{
+  content:'';position:absolute;left:14px;right:14px;bottom:2px;height:2px;
+  background:var(--teal);border-radius:2px;
+}
+.nav-right{display:flex;align-items:center;gap:12px;}
+
+.theme-toggle{
+  width:36px;height:36px;border-radius:50%;border:1px solid var(--border);
+  display:flex;align-items:center;justify-content:center;color:var(--text-dim);
+  transition:border-color .2s ease, color .2s ease, transform .2s var(--ease), box-shadow .2s ease;
+}
+.theme-toggle:hover{color:var(--teal);border-color:color-mix(in srgb, var(--teal) 45%, var(--border-strong));box-shadow:0 0 0 3px var(--teal-dim);}
+.theme-toggle:active{transform:scale(.94);}
+.theme-toggle svg{width:16px;height:16px;}
+.theme-toggle .moon{display:none;}
+[data-theme="light"] .theme-toggle .sun{display:none;}
+[data-theme="light"] .theme-toggle .moon{display:block;}
+
+/* --- primary CTA: gradient-ring pill, the one documented gradient
+       exception in the whole design system --- */
+.cta-ring{
+  padding:1.5px;border-radius:var(--radius-pill);background:var(--cta-grad);
+  flex-shrink:0;transition:filter .2s ease, transform .2s var(--ease);
+}
+.cta-ring:hover{filter:brightness(1.12);transform:translateY(-1px);}
+.cta-ring:active{transform:translateY(0) scale(.98);}
+.nav-cta{
+  font-family:var(--font-mono);font-size:13px;font-weight:500;color:var(--text);
+  background:var(--bg-elevated);padding:9px 17px;border-radius:calc(var(--radius-pill) - 1.5px);
+  display:flex;align-items:center;gap:8px;white-space:nowrap;
+}
+.nav-cta svg{width:13px;height:13px;flex-shrink:0;transition:transform .2s var(--ease);}
+.cta-ring:hover .nav-cta svg{transform:translateX(2px);}
+
+.menu-toggle{display:none;width:36px;height:36px;border-radius:50%;border:1px solid var(--border);align-items:center;justify-content:center;position:relative;color:var(--text-dim);transition:border-color .2s ease, color .2s ease;}
+.menu-toggle:hover{color:var(--teal);border-color:color-mix(in srgb, var(--teal) 45%, var(--border-strong));}
+.menu-toggle svg{width:17px;height:17px;}
+
+.mobile-panel{
+  display:none;position:fixed;inset:0;z-index:99;background:var(--bg);
+  padding:96px 20px 28px;flex-direction:column;
+}
+.mobile-panel.open{display:flex;}
+.mobile-nav-list{display:flex;flex-direction:column;gap:2px;margin-bottom:20px;overflow-y:auto;}
+.mobile-panel a.mp-link{
+  display:flex;align-items:center;gap:14px;
+  font-family:var(--font-mono);font-size:16px;padding:15px 12px;border-radius:12px;color:var(--text);
+  border-left:2px solid transparent;transition:background .2s ease, border-color .2s ease, color .2s ease;
+}
+.mobile-panel a.mp-link:active{background:var(--surface);}
+.mobile-panel a.mp-link.active{color:var(--teal);border-left-color:var(--teal);background:var(--teal-dim);}
+.mp-link .mp-icon{width:20px;height:20px;flex-shrink:0;color:var(--text-faint);}
+.mobile-panel a.mp-link.active .mp-icon{color:var(--teal);}
+.mobile-panel a.mp-link svg{width:100%;height:100%;}
+.mobile-cta-ring{
+  margin-top:auto;padding:1.5px;border-radius:var(--radius-pill);background:var(--cta-grad);flex-shrink:0;
+}
+.mobile-cta-ring .nav-cta{
+  width:100%;justify-content:center;padding:15px 18px;font-size:14.5px;border-radius:calc(var(--radius-pill) - 1.5px);
+}
+
+@media (max-width:860px){
+  .nav-links{display:none;}
+  .menu-toggle{display:flex;}
+  .nav-cta-desktop{display:none;}
+}
+</style>
+</head>
+<body data-theme="dark">
+<div id="navSentinel"></div>
+<a href="#main" class="skip-link">Skip to content</a>
+
+<header class="site-nav" id="siteNav">
+  <div class="nav-inner">
+    <a href="#home" class="logo" aria-label="Hamza Majeed, home">
+      <span class="logo-word">
+        <span class="logo-script">Hamza</span>
+        <span class="logo-surname">MAJEED</span>
+      </span>
+      <span class="logo-tagline" aria-hidden="true"><span class="tdot"></span>SEO &middot; Local SEO &middot; WordPress</span>
+    </a>
+    <nav class="nav-links" id="deskNav" aria-label="Primary">
+      <a href="#home" data-section="home">Home</a>
+      <a href="#about" data-section="about">About</a>
+      <a href="#skills" data-section="skills">Skills</a>
+      <a href="#work" data-section="work">Work</a>
+      <a href="#experience" data-section="experience">Experience</a>
+      <a href="#certifications" data-section="certifications">Certs</a>
+    </nav>
+    <div class="nav-right">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark and light theme">
+        <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
+      </button>
+      <span class="cta-ring nav-cta-desktop">
+        <a href="#contact" class="nav-cta">Let's Work Together
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </span>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobilePanel">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-panel" id="mobilePanel">
+  <nav class="mobile-nav-list" id="mobileNav" aria-label="Mobile primary">
+    <a href="#home" class="mp-link" data-section="home">
+      <span class="mp-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11.5 12 4l9 7.5"/><path d="M5 10v9a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1v-9"/></svg></span>
+      Home
+    </a>
+    <a href="#about" class="mp-link" data-section="about">
+      <span class="mp-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="3.4"/><path d="M5 20c1.2-3.8 4-5.6 7-5.6s5.8 1.8 7 5.6"/></svg></span>
+      About
+    </a>
+    <a href="#skills" class="mp-link" data-section="skills">
+      <span class="mp-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20V12M12 20V4M20 20v-7"/></svg></span>
+      Skills
+    </a>
+    <a href="#work" class="mp-link" data-section="work">
+      <span class="mp-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 8.5A1.5 1.5 0 0 1 4.5 7H9l1.7 2H19.5A1.5 1.5 0 0 1 21 10.5v7A1.5 1.5 0 0 1 19.5 19h-15A1.5 1.5 0 0 1 3 17.5Z"/></svg></span>
+      Work
+    </a>
+    <a href="#experience" class="mp-link" data-section="experience">
+      <span class="mp-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="8" width="18" height="12" rx="1.8"/><path d="M8 8V6a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 13h18"/></svg></span>
+      Experience
+    </a>
+    <a href="#certifications" class="mp-link" data-section="certifications">
+      <span class="mp-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="9" r="5.2"/><path d="M9 13.4 7.5 21l4.5-2.4 4.5 2.4-1.5-7.6"/></svg></span>
+      Certifications
+    </a>
+    <a href="#contact" class="mp-link" data-section="contact">
+      <span class="mp-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg></span>
+      Contact
+    </a>
+  </nav>
+  <span class="mobile-cta-ring">
+    <a href="#contact" class="nav-cta">Let's Work Together
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+  </span>
+</div>
+
+<style>
+/* ============================================================
+   HERO
+   ============================================================ */
+.hero{padding:156px 0 88px;position:relative;overflow:hidden;}
+.hero-grid{display:grid;grid-template-columns:1.08fr 0.92fr;gap:64px;align-items:center;}
+.hero-copy .eyebrow{margin-bottom:20px;text-transform:uppercase;}
+.hero h1{font-size:clamp(38px,5.4vw,60px);line-height:1.05;margin-bottom:16px;}
+.hero h1 .accent{color:var(--teal);}
+.hero-value{font-family:var(--font-display);font-size:clamp(19px,2.2vw,23px);font-weight:500;color:var(--text);line-height:1.4;margin-bottom:14px;max-width:560px;}
+.hero-value .accent{color:var(--teal);}
+.hero .lede{font-size:17px;color:var(--text-dim);max-width:540px;margin-bottom:32px;line-height:1.6;}
+.hero .lede strong{color:var(--text);font-weight:600;}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:32px;}
+
+.btn{
+  font-family:var(--font-mono);font-size:14px;
+  padding:14px 22px;border-radius:var(--radius-pill);
+  display:inline-flex;align-items:center;gap:9px;white-space:nowrap;
+  transition:transform .2s var(--ease), filter .2s ease, background .2s ease, border-color .2s ease;
+}
+.btn-primary{background:var(--teal);color:#04120F;}
+.btn-primary:hover{transform:translateY(-2px);filter:brightness(1.06);}
+.btn-primary:active{transform:translateY(0) scale(.98);}
+.btn-ghost{border:1px solid var(--border-strong);color:var(--text);}
+.btn-ghost:hover{border-color:var(--teal);color:var(--teal);transform:translateY(-2px);}
+.btn-ghost:active{transform:translateY(0) scale(.98);}
+.btn-icon{width:22px;height:22px;border-radius:50%;background:rgba(0,0,0,0.12);display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;}
+.btn-ghost .btn-icon{background:var(--teal-dim);}
+.btn svg{width:12px;height:12px;}
+
+.hero-socials{display:flex;align-items:center;gap:14px;}
+.hero-socials a{
+  width:40px;height:40px;border:1px solid var(--border);border-radius:10px;
+  display:flex;align-items:center;justify-content:center;color:var(--text-dim);
+  transition:border-color .2s ease, color .2s ease, transform .2s var(--ease);
+}
+.hero-socials a:hover{border-color:var(--teal);color:var(--teal);transform:translateY(-2px);}
+.hero-socials svg{width:17px;height:17px;}
+
+
+/* Hero photo, double-bezel frame + floating evidence chip */
+.hero-photo-wrap{position:relative;}
+.hero-photo-shell{
+  border-radius:var(--radius-lg);padding:8px;background:var(--surface);
+  border:1px solid var(--border-strong);box-shadow:var(--shadow-lift);
+}
+.hero-photo-shell .inner{
+  border-radius:calc(var(--radius-lg) - 8px);overflow:hidden;position:relative;
+  aspect-ratio:4/5;
+}
+.hero-photo-shell img{width:100%;height:100%;object-fit:cover;}
+.hero-photo-shell .inner::after{
+  content:'';position:absolute;inset:0;border-radius:inherit;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,0.12);pointer-events:none;
+}
+.hero-float-card{
+  position:absolute;left:-18px;bottom:28px;max-width:220px;
+  background:var(--bg-elevated);border:1px solid var(--border-strong);
+  border-left:3px solid var(--teal);
+  padding:14px 16px;border-radius:0;
+  box-shadow:0 16px 40px -12px rgba(0,0,0,0.5);
+}
+.hero-float-card .ev-label{font-family:var(--font-mono);font-size:10px;color:var(--text-faint);text-transform:uppercase;letter-spacing:.06em;margin-bottom:5px;}
+.hero-float-card .ev-value{font-family:var(--font-display);font-size:25px;color:var(--teal-strong);line-height:1;margin-bottom:3px;}
+.hero-float-card .ev-sub{font-family:var(--font-body);font-size:12.5px;color:var(--text-dim);}
+
+@media (max-width:960px){
+  .hero-grid{grid-template-columns:1fr;}
+  .hero-photo-wrap{order:-1;max-width:340px;margin:0 auto 32px;}
+  .hero-float-card{left:auto;right:-10px;bottom:-18px;}
+}
+
+/* Hero proof rail: compact, sharp-cornered (evidence family), restrained -
+   no card shadows, just thin dividers, so it supports the hero without
+   competing with it. */
+.hero-stats-rail{
+  display:grid;grid-template-columns:repeat(4,1fr);
+  border:1px solid var(--border);max-width:560px;margin-top:8px;
+}
+.hero-stats-rail .hsr-cell{padding:13px 16px;border-right:1px solid var(--border);}
+.hero-stats-rail .hsr-cell:last-child{border-right:none;}
+.hsr-cell b{display:block;font-family:var(--font-display);font-size:19px;color:var(--text);line-height:1.15;margin-bottom:3px;white-space:nowrap;}
+.hsr-cell span{font-family:var(--font-mono);font-size:10px;color:var(--text-faint);line-height:1.3;display:block;}
+@media (max-width:860px){
+  .hero-stats-rail{grid-template-columns:repeat(2,1fr);}
+  .hero-stats-rail .hsr-cell:nth-child(2){border-right:none;}
+  .hero-stats-rail .hsr-cell:nth-child(1),.hero-stats-rail .hsr-cell:nth-child(2){border-bottom:1px solid var(--border);}
+}
+</style>
+
+<main id="main">
+
+  <section class="hero" id="home" aria-label="Introduction">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">SEO Specialist &middot; WordPress Webmaster</p>
+        <h1>Hamza Majeed</h1>
+        <p class="hero-value">I find the <span class="accent">SEO problem</span>. Then I fix it in <span class="accent">WordPress</span>.</p>
+        <p class="lede">Technical SEO, WordPress development and performance optimization, handled end-to-end, with measurable evidence from real projects.</p>
+        <div class="hero-actions">
+          <a href="Hamza_Majeed_Resume.pdf" download class="btn btn-primary">
+            Download resume
+            <span class="btn-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg></span>
+          </a>
+          <a href="#work" class="btn btn-ghost">View case studies</a>
+        </div>
+        <div class="hero-socials">
+          <a href="mailto:hamzamajeed.hm1996@gmail.com" aria-label="Email Hamza">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6h18v12H3z"/><path d="M3 7l9 6 9-6"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/hamza-majeed98" target="_blank" rel="noopener" aria-label="LinkedIn profile">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 10v7M7 7v.01M12 17v-4.5a1.5 1.5 0 0 1 3 0V17M12 12.5v0"/></svg>
+          </a>
+          <a href="https://wa.me/923406744625" target="_blank" rel="noopener" aria-label="WhatsApp Hamza">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.5 11.9a8.4 8.4 0 0 1-12.3 7.4L4 20.5l1.3-4a8.4 8.4 0 1 1 15.2-4.6Z"/><path d="M9 10.4c0 3.2 2.6 5.6 5.6 5.6l.5-1.9-2-1-1 1.1a5.1 5.1 0 0 1-2.2-2.2l1.1-1-1-2-1.9.5Z"/></svg>
+          </a>
+        </div>
+        <div class="hero-stats-rail">
+          <div class="hsr-cell"><b>4+</b><span>Years, SEO &amp; WordPress</span></div>
+          <div class="hsr-cell"><b>30%</b><span>Growth, Klimastal AS</span></div>
+          <div class="hsr-cell"><b>96/100</b><span>Desktop performance</span></div>
+          <div class="hsr-cell"><b>NO&middot;AE&middot;TR</b><span>Markets worked in</span></div>
+        </div>
+      </div>
+
+      <div class="hero-photo-wrap reveal in">
+        <div class="hero-photo-shell">
+          <div class="inner">
+            <img src="images/hamza-majeed.jpg" alt="Portrait of Hamza Majeed, SEO Specialist and WordPress Webmaster">
+          </div>
+        </div>
+        <div class="hero-float-card">
+          <p class="ev-label">Klimastal AS &middot; 2022-2025</p>
+          <p class="ev-value">68 &rarr; 96</p>
+          <p class="ev-sub">Desktop performance score, four checkpoints</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<style>
+/* ============================================================
+   ABOUT
+   ============================================================ */
+.about-intro{max-width:760px;margin-bottom:56px;}
+.about-intro p{font-size:clamp(20px,2.4vw,26px);font-family:var(--font-display);font-weight:500;line-height:1.4;color:var(--text);letter-spacing:-0.005em;}
+.about-intro .accent{color:var(--teal);}
+.about-grid{display:grid;grid-template-columns:1.3fr 0.9fr;gap:60px;}
+.about-copy p{color:var(--text-dim);margin-bottom:18px;font-size:16px;line-height:1.7;max-width:64ch;}
+.about-copy p:last-child{margin-bottom:0;}
+.about-facts{
+  border:1px solid var(--border);border-radius:0;
+  padding:26px;background:var(--surface);align-self:start;
+}
+.about-facts dl{display:grid;gap:18px;}
+.about-facts .fact{display:grid;gap:4px;}
+.about-facts dt{font-family:var(--font-mono);font-size:11.5px;color:var(--text-faint);text-transform:uppercase;letter-spacing:.06em;}
+.about-facts dd{margin:0;font-size:15px;}
+.about-facts hr{border:none;border-top:1px solid var(--border);margin:0;}
+
+@media (max-width:860px){.about-grid{grid-template-columns:1fr;}}
+</style>
+
+  <section id="about">
+    <div class="wrap">
+      <div class="section-head reveal">
+                <h2>A technical bias, applied to marketing.</h2>
+      </div>
+      <p class="about-intro reveal">I don't treat SEO and WordPress as separate disciplines. I use <span class="accent">audits to find the problem</span>, WordPress to <span class="accent">ship the fix</span>, and analytics to <span class="accent">check my own work</span>.</p>
+      <div class="about-grid">
+        <div class="about-copy reveal">
+          <p>I'm an SEO Specialist and WordPress Webmaster with 4+ years sitting at the intersection of marketing and engineering, the person who can read a Screaming Frog crawl report in the morning and rebuild a WooCommerce checkout flow in the afternoon. Most of that time was spent as the sole SEO and web owner for Klimastal AS, a Norwegian industrial company, where I ran the full stack: technical audits, on-page and off-page strategy, content briefs, and the WordPress site itself.</p>
+          <p>Day to day, that means technical SEO audits, crawl errors, canonical conflicts, indexability issues, alongside Core Web Vitals work, schema implementation, and GA4 / Search Console reporting that stakeholders can actually act on. I've also built a 2,011-domain link-building prospect database from scratch, because off-page SEO for a B2B brand is a relevance problem, not a volume one. On the development side, I build and maintain WordPress and Elementor sites, from WooCommerce configuration to plain performance and responsiveness fixes.</p>
+          <p>My Klimastal engagement ran through December 2025. Since January 2026 I've also been deepening my technical toolkit, Python, data analysis and applied machine learning, through an AI/ML program at KIET (via NAVTTC) and Microsoft's Python and Data Visualization certificates, plus smaller builds like a chatbot, a churn-prediction model and a scraping pipeline. SEO and WordPress remain my primary focus for the next role. In short: SEO and WordPress first, currently expanding my technical toolkit through Python, data analysis and machine learning as the complement, not the replacement.</p>
+        </div>
+        <div class="about-facts reveal">
+          <dl>
+            <div class="fact"><dt>Location</dt><dd>Karachi, Pakistan</dd></div>
+            <hr>
+            <div class="fact"><dt>Education</dt><dd>BS (Hons) Information Technology, University of Gujrat, CGPA 3.14/4.0</dd></div>
+            <hr>
+            <div class="fact"><dt>Core focus</dt><dd>Technical SEO, WordPress, Elementor</dd></div>
+            <hr>
+            <div class="fact"><dt>Currently building</dt><dd>Python, data analysis &amp; ML fundamentals</dd></div>
+            <hr>
+            <div class="fact"><dt>Client markets</dt><dd>Norway, UAE, Turkiye, Pakistan</dd></div>
+            <hr>
+            <div class="fact"><dt>Open to</dt><dd>SEO / Web roles, Python &amp; Data Analyst roles, remote, on-site, or contract</dd></div>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<style>
+/* ============================================================
+   SELECTED IMPACT — editorial stat row, no boxes/cards, deliberately
+   different from the hero rail and the Work section's evidence
+   cards so it doesn't repeat either layout family.
+   ============================================================ */
+.impact-row{display:grid;grid-template-columns:repeat(4,1fr);gap:32px;}
+.impact-stat{border-top:2px solid var(--teal);padding-top:18px;}
+.impact-stat b{display:block;font-family:var(--font-display);font-size:clamp(28px,3.6vw,38px);color:var(--text);line-height:1;margin-bottom:8px;}
+.impact-stat span{font-family:var(--font-mono);font-size:12px;color:var(--text-dim);line-height:1.4;}
+.impact-note{margin-top:30px;font-size:13px;color:var(--text-faint);font-style:italic;max-width:660px;line-height:1.6;}
+@media (max-width:760px){.impact-row{grid-template-columns:1fr 1fr;gap:28px 24px;}}
+@media (max-width:420px){.impact-row{grid-template-columns:1fr;}}
+</style>
+
+  <section id="impact" class="tight" aria-label="Selected impact">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <h2>Selected impact</h2>
+        <p class="sub">Four numbers pulled directly from the case studies below, not aggregated or adjusted.</p>
+      </div>
+      <div class="impact-row reveal">
+        <div class="impact-stat"><b>+30.7%</b><span>Search impressions, Klimastal AS</span></div>
+        <div class="impact-stat"><b>+112.5%</b><span>Organic visitors, Klimastal AS</span></div>
+        <div class="impact-stat"><b>96/100</b><span>Desktop performance, after</span></div>
+        <div class="impact-stat"><b>2,011</b><span>Link-building prospects identified</span></div>
+      </div>
+      <p class="impact-note">These are project-specific measurements from individual engagements, not universal guarantees. Full context and caveats for each figure are in the Work section below.</p>
+    </div>
+  </section>
+
+<style>
+/* ============================================================
+   SKILLS — experience tiers, not percentage bars. Visual weight
+   (not a fabricated number) signals depth: Advanced gets the
+   widest column and a filled marker; Developing gets a muted,
+   dashed treatment so it never reads as equivalent expertise.
+   ============================================================ */
+.skills-tiers{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:40px 44px;align-items:start;}
+.skill-tier .tier-head{margin-bottom:18px;}
+.skill-tier h3{
+  font-family:var(--font-mono);font-size:14px;color:var(--text);font-weight:600;
+  text-transform:uppercase;letter-spacing:.05em;display:flex;align-items:center;gap:9px;margin-bottom:6px;
+}
+.skill-tier h3::before{content:'';width:8px;height:8px;border-radius:50%;background:var(--teal);flex-shrink:0;}
+.skill-tier.tier-proficient h3::before{background:var(--slate);}
+.skill-tier.tier-developing h3::before{background:var(--amber);}
+.tier-caption{font-size:12.5px;color:var(--text-faint);line-height:1.5;max-width:34ch;}
+.tier-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px;}
+.tier-tags span{font-family:var(--font-mono);font-size:12.5px;color:var(--text-dim);border:1px solid var(--border);padding:6px 12px;border-radius:var(--radius-pill);}
+.skill-tier.tier-advanced .tier-tags span{border-color:rgba(45,212,191,0.32);color:var(--text);}
+.skill-tier.tier-developing .tier-tags span{border-style:dashed;border-color:rgba(242,169,60,0.4);}
+@media (max-width:960px){.skills-tiers{grid-template-columns:1fr 1fr;}.skill-tier.tier-advanced{grid-column:1/-1;}}
+@media (max-width:640px){.skills-tiers{grid-template-columns:1fr;}.skill-tier.tier-advanced{grid-column:auto;}}
+</style>
+
+  <section id="skills" class="tight">
+    <div class="wrap">
+      <div class="section-head reveal">
+                <h2>Tools I actually use</h2>
+        <p class="sub">Grouped by real hands-on time, not a percentage score. Cross-checked against the case studies below.</p>
+      </div>
+
+      <div class="skills-tiers">
+        <div class="skill-tier tier-advanced reveal">
+          <div class="tier-head">
+            <h3>Advanced</h3>
+            <p class="tier-caption">Core expertise, production-tested across real engagements.</p>
+          </div>
+          <div class="tier-tags">
+            <span>Technical SEO</span>
+            <span>On-Page SEO</span>
+            <span>Off-Page SEO &amp; Link Building</span>
+            <span>Local SEO</span>
+            <span>Core Web Vitals</span>
+            <span>Schema / Structured Data</span>
+            <span>WordPress</span>
+            <span>Elementor</span>
+            <span>GA4</span>
+            <span>Google Search Console</span>
+            <span>SEMrush / Screaming Frog</span>
+          </div>
+        </div>
+
+        <div class="skill-tier tier-proficient reveal">
+          <div class="tier-head">
+            <h3>Proficient</h3>
+            <p class="tier-caption">Comfortable and applied regularly, not my primary specialty.</p>
+          </div>
+          <div class="tier-tags">
+            <span>International SEO</span>
+            <span>WooCommerce</span>
+            <span>HTML &amp; CSS</span>
+            <span>Google Tag Manager</span>
+            <span>Shopify</span>
+          </div>
+        </div>
+
+        <div class="skill-tier tier-developing reveal">
+          <div class="tier-head">
+            <h3>Developing</h3>
+            <p class="tier-caption">Actively building since Jan 2026, not yet at SEO-level fluency.</p>
+          </div>
+          <div class="tier-tags">
+            <span>JavaScript</span>
+            <span>Python</span>
+            <span>Pandas / Data Analysis</span>
+            <span>SQL</span>
+            <span>Machine Learning</span>
+            <span>Data Visualization</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<style>
+/* ============================================================
+   HOW I WORK (process strip)
+   ============================================================ */
+.process-row{display:grid;grid-template-columns:repeat(6,1fr);gap:0;margin-bottom:80px;position:relative;}
+.process-step{position:relative;padding:0 16px 0 0;}
+.process-step:not(:last-child)::after{
+  content:'';position:absolute;top:15px;right:-2px;width:calc(100% - 30px);height:1px;background:var(--border-strong);
+}
+.process-step .num{
+  width:30px;height:30px;border-radius:50%;border:1px solid var(--teal);color:var(--teal);
+  display:flex;align-items:center;justify-content:center;font-family:var(--font-mono);font-size:12px;
+  margin-bottom:14px;background:var(--bg);position:relative;z-index:1;
+}
+.process-step h3{font-size:15px;margin-bottom:6px;font-family:var(--font-display);font-weight:600;}
+.process-step p{font-size:13px;color:var(--text-dim);line-height:1.55;}
+@media (max-width:960px){
+  .process-row{grid-template-columns:repeat(3,1fr);gap:28px 16px;}
+  .process-step:nth-child(3)::after{display:none;}
+  .process-step::after{display:none;}
+}
+@media (max-width:560px){
+  .process-row{grid-template-columns:repeat(2,1fr);}
+}
+
+/* ============================================================
+   SERVICES
+   ============================================================ */
+.services-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;}
+.service-card{
+  border:1px solid var(--border);border-radius:var(--radius-md);padding:26px 22px;
+  background:var(--surface);transition:transform .25s var(--ease), border-color .25s ease, box-shadow .25s ease;
+}
+.service-card:hover{transform:translateY(-2px);border-color:var(--teal);background:var(--surface-2);}
+.service-card .icon{
+  width:40px;height:40px;border-radius:10px;background:var(--teal-dim);color:var(--teal);
+  display:flex;align-items:center;justify-content:center;margin-bottom:18px;
+}
+.service-card .icon svg{width:19px;height:19px;}
+.service-card h3{font-size:16.5px;margin-bottom:10px;}
+.service-card p{color:var(--text-dim);font-size:14px;line-height:1.55;}
+
+@media (max-width:960px){.services-grid{grid-template-columns:repeat(2,1fr);}}
+@media (max-width:560px){.services-grid{grid-template-columns:1fr;}}
+</style>
+
+  <section id="services" class="tight">
+    <div class="wrap">
+      <div class="section-head reveal">
+                <h2>Research, then implementation, in that order</h2>
+        <p class="sub">Every project below follows this sequence. Where an engagement stopped at "prioritize" because it was diagnostic-only, that's labeled explicitly rather than blended in with implemented work.</p>
+      </div>
+      <div class="process-row reveal">
+        <div class="process-step"><span class="num">01</span><h3>Research</h3><p>Keyword, competitor and search-intent data before any recommendation.</p></div>
+        <div class="process-step"><span class="num">02</span><h3>Audit</h3><p>Crawl, indexation, on-page and performance review across the real tool stack.</p></div>
+        <div class="process-step"><span class="num">03</span><h3>Prioritize</h3><p>Every finding scored on impact versus effort, not fixed in tool order.</p></div>
+        <div class="process-step"><span class="num">04</span><h3>Implement</h3><p>Ship the fix directly in WordPress when I have platform access.</p></div>
+        <div class="process-step"><span class="num">05</span><h3>Measure</h3><p>Re-test with the same tool that flagged the issue in the first place.</p></div>
+        <div class="process-step"><span class="num">06</span><h3>Iterate</h3><p>A case study is a snapshot. I keep a next-steps list for every project.</p></div>
+      </div>
+
+      <div class="section-head reveal">
+                <h2>What I can take off your plate</h2>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card reveal">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></div>
+          <h3>Technical SEO Audits</h3>
+          <p>Crawlability, indexability, canonicalization and schema, the diagnostics that decide whether the rest of SEO works at all.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19V5M4 19h16M8 15l3-4 3 3 4-6"/></svg></div>
+          <h3>On-Page &amp; Content SEO</h3>
+          <p>Keyword and search-intent research turned into title tags, content briefs and an internal-linking structure that supports them.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 12l-4 4 4 4M15 4l4 4-4 4M4 16h9a4 4 0 0 0 4-4"/></svg></div>
+          <h3>Off-Page SEO &amp; Link Building</h3>
+          <p>Competitor and keyword-derived prospecting, categorized by outreach angle. Built a 2,011-domain database this way for Klimastal.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8Z"/></svg></div>
+          <h3>Core Web Vitals &amp; Performance</h3>
+          <p>LCP, TBT and CLS work that shows up in PageSpeed scores and in how the site actually feels to use.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 4v5"/></svg></div>
+          <h3>WordPress Development</h3>
+          <p>Builds, WooCommerce configuration and ongoing maintenance, hosting, plugins, security and speed handled properly.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h4"/></svg></div>
+          <h3>Elementor Landing Pages</h3>
+          <p>Conversion-focused, SEO-structured pages built in Elementor and tied to a clear campaign goal.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20V10M11 20V4M18 20v-7"/></svg></div>
+          <h3>SEO Reporting &amp; Analytics</h3>
+          <p>GA4, Search Console and Tag Manager configured properly, with reporting stakeholders can actually use.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1a2 2 0 1 1-2.9 2.9l-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.6V21a2 2 0 1 1-4 0v-.2a1.7 1.7 0 0 0-1.1-1.6 1.7 1.7 0 0 0-1.9.3l-.1.1a2 2 0 1 1-2.9-2.9l.1-.1a1.7 1.7 0 0 0 .3-1.9 1.7 1.7 0 0 0-1.6-1H3a2 2 0 1 1 0-4h.2a1.7 1.7 0 0 0 1.6-1 1.7 1.7 0 0 0-.3-1.9l-.1-.1a2 2 0 1 1 2.9-2.9l.1.1a1.7 1.7 0 0 0 1.9.3H9a1.7 1.7 0 0 0 1-1.6V3a2 2 0 1 1 4 0v.2a1.7 1.7 0 0 0 1 1.6 1.7 1.7 0 0 0 1.9-.3l.1-.1a2 2 0 1 1 2.9 2.9l-.1.1a1.7 1.7 0 0 0-.3 1.9V9a1.7 1.7 0 0 0 1.6 1H21a2 2 0 1 1 0 4h-.2a1.7 1.7 0 0 0-1.6 1Z"/></svg></div>
+          <h3>Website Maintenance</h3>
+          <p>Ongoing WordPress upkeep, updates, SSL, backups, and the small fixes that prevent big ones.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<style>
+/* ============================================================
+   WORK / CASE STUDIES
+   ============================================================ */
+.work-legend{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;padding:22px 24px;margin-bottom:40px;border:1px solid var(--border);border-left:3px solid var(--teal);background:var(--bg-elevated);}
+.wl-item{display:flex;flex-direction:column;gap:8px;}
+.wl-item .status-chip{width:fit-content;}
+.wl-item p{font-size:13px;color:var(--text-dim);line-height:1.5;}
+@media (max-width:760px){.work-legend{grid-template-columns:1fr;gap:16px;}}
+
+.proof-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:64px;}
+@media (max-width:860px){.proof-strip{grid-template-columns:1fr 1fr;}}
+
+.projects-list{display:grid;gap:20px;}
+.project-card{
+  border:1px solid var(--border);border-radius:var(--radius-lg);
+  background:var(--surface);overflow:hidden;
+}
+.project-head{
+  padding:26px 28px;display:flex;align-items:center;justify-content:space-between;gap:20px;
+  flex-wrap:wrap;border-bottom:1px solid var(--border);cursor:pointer;
+}
+.project-head-left{display:flex;align-items:flex-start;gap:18px;flex-wrap:wrap;}
+.project-head h3{font-size:20px;margin-bottom:6px;}
+.project-cat{font-family:var(--font-mono);font-size:12px;color:var(--text-faint);display:block;}
+.project-highlight{font-family:var(--font-mono);font-size:12.5px;color:var(--teal-strong);white-space:nowrap;}
+.project-toggle{
+  width:34px;height:34px;border-radius:8px;border:1px solid var(--border);
+  display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:transform .3s var(--ease);
+}
+.project-card.open .project-toggle{transform:rotate(45deg);}
+.project-toggle svg{width:15px;height:15px;}
+
+.project-body{
+  display:grid;grid-template-rows:0fr;transition:grid-template-rows .4s var(--ease);
+}
+.project-card.open .project-body{grid-template-rows:1fr;}
+.project-body-inner{overflow:hidden;}
+.project-content{padding:30px 28px 34px;}
+.project-shot{width:100%;border-radius:var(--radius-md);overflow:hidden;margin-bottom:26px;border:1px solid var(--border-strong);}
+.project-shot img{width:100%;height:auto;display:block;}
+.project-overview{color:var(--text-dim);font-size:15.5px;line-height:1.7;max-width:74ch;margin-bottom:26px;}
+.project-cols{display:grid;grid-template-columns:1fr 1fr;gap:28px 40px;margin-bottom:26px;}
+.project-cols .field h4{
+  font-family:var(--font-mono);font-size:11px;color:var(--teal);text-transform:uppercase;letter-spacing:.06em;margin-bottom:10px;
+}
+.project-cols .field p{color:var(--text-dim);font-size:14.5px;line-height:1.65;}
+.project-cols .field ul{display:grid;gap:7px;}
+.project-cols .field li{color:var(--text-dim);font-size:14.5px;line-height:1.55;padding-left:16px;position:relative;}
+.project-cols .field li::before{content:'-';color:var(--text-faint);position:absolute;left:0;}
+.stack-pills{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:26px;}
+.stack-pills span{font-family:var(--font-mono);font-size:11.5px;color:var(--text-dim);border:1px solid var(--border);padding:4px 10px;border-radius:var(--radius-pill);}
+.evidence-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-bottom:16px;}
+.evidence-note{font-family:var(--font-mono);font-size:12px;color:var(--text-faint);font-style:italic;line-height:1.6;border-top:1px dashed var(--border-strong);padding-top:14px;margin-top:4px;}
+
+/* Klimastal performance chart */
+.perf-chart{display:flex;align-items:flex-end;gap:18px;height:150px;margin:6px 0 10px;padding:0 4px;}
+.perf-bar{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%;}
+.perf-bar .bar{width:100%;max-width:56px;background:var(--surface-2);border:1px solid var(--border-strong);border-bottom:none;position:relative;display:flex;align-items:flex-start;justify-content:center;transition:height 1s var(--ease);}
+.perf-bar .bar-fill-score{font-family:var(--font-mono);font-size:13px;color:var(--teal-strong);padding-top:8px;}
+.perf-bar.is-good .bar{background:var(--teal-dim);border-color:rgba(45,212,191,0.35);}
+.perf-bar .date{font-family:var(--font-mono);font-size:10.5px;color:var(--text-faint);margin-top:10px;}
+
+@media (max-width:700px){
+  .project-cols{grid-template-columns:1fr;}
+}
+</style>
+
+  <section id="work" class="tight">
+    <div class="wrap">
+      <div class="section-head reveal">
+                <h2>Five projects, labeled honestly</h2>
+        <p class="sub">Real engagements and self-initiated builds, each tagged by what it actually proves. No placeholder "results" boxes.</p>
+      </div>
+
+      <div class="work-legend reveal">
+        <div class="wl-item"><span class="status-chip status-implemented">Implemented</span><p>Platform access, shipped it myself, before/after evidence.</p></div>
+        <div class="wl-item"><span class="status-chip status-diagnostic">Diagnostic &amp; strategy</span><p>Audited and delivered a plan. No CMS access, a different skill.</p></div>
+        <div class="wl-item"><span class="status-chip status-concept">Concept</span><p>Self-initiated, built to demonstrate capability, not a client engagement.</p></div>
+      </div>
+
+      <div class="proof-strip reveal">
+        <div class="evidence-card">
+          <p class="ev-label">Single-client relationship</p>
+          <p class="ev-value">3+ yrs</p>
+          <p class="ev-note">Klimastal AS, Jan 2022-Dec 2025</p>
+        </div>
+        <div class="evidence-card">
+          <p class="ev-label">Desktop performance reached</p>
+          <p class="ev-value">96/100</p>
+          <p class="ev-note">Up from 68/100, four checkpoints</p>
+        </div>
+        <div class="evidence-card">
+          <p class="ev-label">Link-building database built</p>
+          <p class="ev-value">2,011</p>
+          <p class="ev-note">Domains, categorized for outreach</p>
+        </div>
+        <div class="evidence-card">
+          <p class="ev-label">Audits delivered</p>
+          <p class="ev-value">3</p>
+          <p class="ev-note">Technical, competitive &amp; content</p>
+        </div>
+      </div>
+
+      <div class="projects-list">
+
+        <!-- PROJECT 1: KLIMASTÅL -->
+        <article class="project-card reveal open">
+          <button class="project-head" id="project-head-klimastal" aria-expanded="true" aria-controls="project-panel-klimastal">
+            <div class="project-head-left">
+              <div>
+                <div class="chip-row" style="margin-bottom:10px;">
+                  <span class="status-chip status-implemented">Implemented</span>
+                  <span class="status-chip status-verified">Verified</span>
+                </div>
+                <h3>Klimastal AS</h3>
+                <span class="project-cat">SEO + WordPress Optimization &middot; Norway &middot; Ventilation / HVAC</span>
+              </div>
+            </div>
+            <span class="project-highlight">68 &rarr; 96 desktop score</span>
+            <span class="project-toggle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></span>
+          </button>
+          <div class="project-body" id="project-panel-klimastal" role="region" aria-labelledby="project-head-klimastal"><div class="project-body-inner"><div class="project-content">
+
+            <p class="project-overview">Klimastal AS is a Norwegian ventilation and HVAC equipment supplier. I owned SEO and the WordPress site for three years, treating technical audits, on-page copy and the WordPress build as one continuous job instead of three separate handoffs.</p>
+
+            <div class="project-cols">
+              <div class="field">
+                <h4>The problem</h4>
+                <p>April 2022 baseline: mobile Performance score of 47/100 and a mobile LCP of 16.3s against Google's 2.5s threshold, on a site whose buyers search mostly on mobile. Desktop sat at 68/100. The live meta description ran 139 characters, under the 150-220 recommended range, and product pages read thin.</p>
+              </div>
+              <div class="field">
+                <h4>What I did</h4>
+                <ul>
+                  <li>Scored every finding across four audit tools on impact versus effort before fixing anything</li>
+                  <li>Led with image compression and format, the one issue every tool flagged independently</li>
+                  <li>Rewrote and expanded homepage content in WordPress/Elementor across six product categories</li>
+                  <li>Rewrote the title tag and meta description around commercial search intent</li>
+                  <li>Re-tested performance at four checkpoints from April 2022 to October 2024</li>
+                  <li>Built the 2,011-domain link-building database below from competitor and keyword research</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="stack-pills"><span>WordPress</span><span>Astra</span><span>Elementor</span><span>PageSpeed Insights</span><span>Google Site Kit</span><span>Screaming Frog</span><span>SEMrush</span></div>
+
+            <p class="ev-label" style="margin-bottom:10px;">Desktop performance, four checkpoints (PageSpeed Insights)</p>
+            <div class="perf-chart" role="img" aria-label="Desktop PageSpeed performance score: 68 in April 2022, 71 in February 2023, 86 in September 2024, 96 in October 2024">
+              <div class="perf-bar" data-score="68"><div class="bar"><span class="bar-fill-score">68</span></div><span class="date">APR 2022</span></div>
+              <div class="perf-bar" data-score="71"><div class="bar"><span class="bar-fill-score">71</span></div><span class="date">FEB 2023</span></div>
+              <div class="perf-bar" data-score="86"><div class="bar"><span class="bar-fill-score">86</span></div><span class="date">SEP 2024</span></div>
+              <div class="perf-bar is-good" data-score="96"><div class="bar"><span class="bar-fill-score">96</span></div><span class="date">OCT 2024</span></div>
+            </div>
+
+            <div class="evidence-row">
+              <div class="evidence-card"><p class="ev-label">Mobile LCP, baseline</p><p class="ev-value">16.3s</p><p class="ev-note">Poor &middot; Apr 2022</p></div>
+              <div class="evidence-card"><p class="ev-label">Search impressions</p><p class="ev-value">+30.7%</p><p class="ev-note">28-day window, Sep 2023</p></div>
+              <div class="evidence-card"><p class="ev-label">Organic visitors</p><p class="ev-value">+112.5%</p><p class="ev-note">Same window, Site Kit</p></div>
+              <div class="evidence-card"><p class="ev-label">SEO Site Checkup</p><p class="ev-value">76/100</p><p class="ev-note">Above the 74 avg for top sites</p></div>
+            </div>
+            <p class="evidence-note">Figures are directional trends across four independently dated checkpoints on the same desktop device profile, not a controlled experiment.</p>
+          </div></div></div>
+        </article>
+
+        <!-- PROJECT 2: ZIYANA YACHTS -->
+        <article class="project-card reveal">
+          <button class="project-head" id="project-head-ziyana" aria-expanded="false" aria-controls="project-panel-ziyana">
+            <div class="project-head-left">
+              <div>
+                <div class="chip-row" style="margin-bottom:10px;">
+                  <span class="status-chip status-diagnostic">Diagnostic &amp; strategy</span>
+                </div>
+                <h3>Ziyana Yachts</h3>
+                <span class="project-cat">Technical SEO Audit &amp; Search Strategy &middot; Dubai, UAE &middot; Luxury Yacht Charter</span>
+              </div>
+            </div>
+            <span class="project-highlight">20.6s mobile LCP found</span>
+            <span class="project-toggle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></span>
+          </button>
+          <div class="project-body" id="project-panel-ziyana" role="region" aria-labelledby="project-head-ziyana"><div class="project-body-inner"><div class="project-content">
+
+            <p class="project-overview">Ziyana Yachts is a Dubai-based luxury yacht charter broker with a genuine worldwide charter network, a combination no local competitor or global directory can claim. I ran a full technical audit, competitive analysis and keyword-to-page roadmap. No CMS access here, this is analysis and a delivered recommendation set, a different skill from the Klimastal engagement above, and I've labeled it that way rather than blur the two together.</p>
+
+            <div class="project-cols">
+              <div class="field">
+                <h4>The problem</h4>
+                <p>The site's highest-value page, the fleet listing, served Googlebot a "Loading yachts..." placeholder with zero crawlable content, on a page competing for "yacht charter Dubai" (6,000-9,000 monthly searches). No sitemap was discoverable, no structured data existed anywhere on the site, and mobile PageSpeed came back at 37/100.</p>
+              </div>
+              <div class="field">
+                <h4>What I did</h4>
+                <ul>
+                  <li>Full crawl and indexation review: robots.txt, sitemap, canonical chains, meta robots</li>
+                  <li>Root-caused the 20.6s mobile LCP to a booking widget's JS bundle plus 62+ synchronous requests</li>
+                  <li>Competitive analysis against three Dubai operators and two global directories</li>
+                  <li>Keyword-to-page map across five core pages with rewritten titles and meta descriptions</li>
+                  <li>Delivered a prioritized 90-day roadmap and a before/target visibility scorecard</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="stack-pills"><span>WordPress (Ankor theme)</span><span>PageSpeed Insights</span><span>Manual crawl audit</span><span>Competitive SERP analysis</span></div>
+
+            <div class="evidence-row">
+              <div class="evidence-card"><p class="ev-label">Mobile LCP, field data</p><p class="ev-value">20.6s</p><p class="ev-note">vs. Google's 2.5s "good" threshold</p></div>
+              <div class="evidence-card"><p class="ev-label">Fleet listings crawlable</p><p class="ev-value">0</p><p class="ev-note">In initial HTML response</p></div>
+              <div class="evidence-card"><p class="ev-label">Structured data types</p><p class="ev-value">0</p><p class="ev-note">Schema.org markup found</p></div>
+              <div class="evidence-card"><p class="ev-label">On-page SEO score</p><p class="ev-value">92/100</p><p class="ev-note">The gap was technical, not on-page</p></div>
+            </div>
+            <p class="evidence-note">Diagnostic engagement: this audit identifies and prioritizes the fix, it does not itself change the live site.</p>
+          </div></div></div>
+        </article>
+
+        <!-- PROJECT 3: LINK-BUILDING PROSPECTING SYSTEM -->
+        <article class="project-card reveal">
+          <button class="project-head" id="project-head-linkbuilding" aria-expanded="false" aria-controls="project-panel-linkbuilding">
+            <div class="project-head-left">
+              <div>
+                <div class="chip-row" style="margin-bottom:10px;">
+                  <span class="status-chip status-verified">Verified</span>
+                </div>
+                <h3>Link-Building Prospecting System</h3>
+                <span class="project-cat">Off-Page SEO &middot; Klimastal AS</span>
+              </div>
+            </div>
+            <span class="project-highlight">2,011 domains</span>
+            <span class="project-toggle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></span>
+          </button>
+          <div class="project-body" id="project-panel-linkbuilding" role="region" aria-labelledby="project-head-linkbuilding"><div class="project-body-inner"><div class="project-content">
+
+            <p class="project-overview">Off-page SEO for a Norwegian B2B ventilation supplier isn't a volume game, it's a relevance game. The goal wasn't to find 2,000 links, it was to find 2,000 plausible prospects across every credible outreach category so real outreach could be prioritized by authority and relevance instead of run blind.</p>
+
+            <div class="project-cols">
+              <div class="field">
+                <h4>What I did</h4>
+                <ul>
+                  <li>Ran two parallel research methods, competitor-derived and keyword-derived</li>
+                  <li>Merged and deduplicated results to 2,011 unique domains</li>
+                  <li>Categorized every domain by source type: general, blog, wiki, forum, news, review</li>
+                  <li>Flagged the 86-domain wiki/forum/news/review tier as the best authority-to-effort starting point</li>
+                </ul>
+              </div>
+              <div class="field">
+                <h4>Sample, 4 of 2,011 rows</h4>
+                <ul>
+                  <li>no.wikipedia.org, DA 100, wiki</li>
+                  <li>blog.petrieflom.law.harvard.edu, DA 92, blog</li>
+                  <li>wi.mit.edu, DA 89, news</li>
+                  <li>lemonde.fr, DA 86, blog</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="stack-pills"><span>Competitor backlink research</span><span>Keyword-derived prospecting</span><span>CSV database</span></div>
+
+            <div class="evidence-row">
+              <div class="evidence-card"><p class="ev-label">Unique domains</p><p class="ev-value">2,011</p><p class="ev-note">Verified, CSV export</p></div>
+              <div class="evidence-card"><p class="ev-label">Competitor-derived</p><p class="ev-value">1,740</p><p class="ev-note">86.5% of the database</p></div>
+              <div class="evidence-card"><p class="ev-label">Keyword-derived</p><p class="ev-value">255</p><p class="ev-note">Remaining 13.5%</p></div>
+              <div class="evidence-card"><p class="ev-label">High-authority tier</p><p class="ev-value">86</p><p class="ev-note">Wiki / forum / news / review</p></div>
+            </div>
+            <p class="evidence-note">This proves systematic prospecting and outreach prioritization at scale. It does not prove links were acquired or outreach was sent.</p>
+          </div></div></div>
+        </article>
+
+        <!-- PROJECT 4: TRUE SKIN SECRETS -->
+        <article class="project-card reveal">
+          <button class="project-head" id="project-head-trueskin" aria-expanded="false" aria-controls="project-panel-trueskin">
+            <div class="project-head-left">
+              <div>
+                <div class="chip-row" style="margin-bottom:10px;">
+                  <span class="status-chip status-implemented">Implemented</span>
+                </div>
+                <h3>True Skin Secrets</h3>
+                <span class="project-cat">WordPress + Elementor Build &middot; Skincare &amp; Beauty Content</span>
+              </div>
+            </div>
+            <span class="project-highlight">Built end-to-end</span>
+            <span class="project-toggle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></span>
+          </button>
+          <div class="project-body" id="project-panel-trueskin" role="region" aria-labelledby="project-head-trueskin"><div class="project-body-inner"><div class="project-content">
+
+            <div class="project-shot"><img src="images/true-skin-secrets.jpg" alt="True Skin Secrets homepage hero, live WordPress and Elementor build, showing the headline 'Care For Your Skin With True Skin Secrets'"></div>
+
+            <p class="project-overview">A live skincare and beauty content site, built end-to-end in WordPress using Elementor: homepage, blog structure and visual identity.</p>
+
+            <div class="project-cols">
+              <div class="field">
+                <h4>What the build shows</h4>
+                <p>A full-bleed editorial hero, a blog-first "Know Your Skin" content structure, and a warm, lifestyle-led visual identity, deliberately different from the industrial B2B system built for Klimastal and the restrained luxury system in HMB Estates below. Evidence of range across visual languages, not one template reused three times.</p>
+              </div>
+              <div class="field">
+                <h4>Scope note</h4>
+                <p>This entry documents design and build work, not a performance or SEO audit. Flagged honestly rather than padded with numbers that weren't part of the brief.</p>
+              </div>
+            </div>
+
+            <div class="stack-pills"><span>WordPress</span><span>Elementor</span></div>
+          </div></div></div>
+        </article>
+
+        <!-- PROJECT 5: HMB ESTATES -->
+        <article class="project-card reveal">
+          <button class="project-head" id="project-head-hmb" aria-expanded="false" aria-controls="project-panel-hmb">
+            <div class="project-head-left">
+              <div>
+                <div class="chip-row" style="margin-bottom:10px;">
+                  <span class="status-chip status-concept">Concept &middot; self-initiated</span>
+                </div>
+                <h3>HMB Estates</h3>
+                <span class="project-cat">Luxury Real Estate Web Experience &middot; Dubai</span>
+              </div>
+            </div>
+            <span class="project-highlight">Live build + WP plan</span>
+            <span class="project-toggle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></span>
+          </button>
+          <div class="project-body" id="project-panel-hmb" role="region" aria-labelledby="project-head-hmb"><div class="project-body-inner"><div class="project-content">
+
+            <div class="project-shot"><img src="images/hmb-estates.jpg" alt="HMB Estates homepage hero, self-initiated luxury real estate concept, showing a night-time villa photograph and the headline 'Discover Extraordinary Living'"></div>
+
+            <p class="project-overview">A self-initiated luxury real estate site, live and built end-to-end in Lovable, with an accompanying WordPress + Elementor Pro implementation plan documenting how the same design system would ship in production.</p>
+
+            <div class="project-cols">
+              <div class="field">
+                <h4>What I did</h4>
+                <ul>
+                  <li>UX research, information architecture, and a reusable component system: property card, agent card, testimonial, CTA block</li>
+                  <li>A full technical SEO plan: robots.txt, sitemap structure, schema strategy, keyword-to-page mapping</li>
+                  <li>Planned alongside the visual design from the start, not patched on afterward</li>
+                </ul>
+              </div>
+              <div class="field">
+                <h4>Worth being precise about</h4>
+                <p>The live experience is built in Lovable. The 40-page case study document additionally specifies a recommended WordPress + Elementor Pro production stack, explicitly labeled there as a recommendation, not a deployed environment. The investment figures on the live dashboard are illustrative demo content, not real results, since this is self-initiated rather than a fielded business.</p>
+              </div>
+            </div>
+
+            <div class="stack-pills"><span>Lovable</span><span>WordPress + Elementor Pro (planned)</span><span>Yoast SEO</span><span>GA4</span><span>Search Console</span></div>
+          </div></div></div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+<style>
+/* ============================================================
+   EXPERIENCE
+   ============================================================ */
+.timeline{position:relative;padding-left:32px;}
+.timeline::before{content:'';position:absolute;left:5px;top:6px;bottom:6px;width:1px;background:var(--border-strong);}
+.tl-item{position:relative;padding-bottom:44px;}
+.tl-item:last-child{padding-bottom:0;}
+.tl-dot{position:absolute;left:-32px;top:5px;width:11px;height:11px;border-radius:50%;background:var(--bg);border:2px solid var(--teal);}
+.tl-head{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap;margin-bottom:6px;}
+.tl-role{font-size:19px;font-family:var(--font-display);}
+.tl-date{font-family:var(--font-mono);font-size:12.5px;color:var(--text-faint);white-space:nowrap;}
+.tl-org{color:var(--teal);font-size:14px;margin-bottom:14px;font-family:var(--font-mono);}
+.tl-list{display:grid;gap:8px;max-width:680px;}
+.tl-list li{color:var(--text-dim);font-size:14.5px;line-height:1.6;padding-left:16px;position:relative;}
+.tl-list li::before{content:'';position:absolute;left:0;top:9px;width:5px;height:5px;border-radius:50%;background:var(--text-faint);}
+</style>
+
+  <section id="experience">
+    <div class="wrap">
+      <div class="section-head reveal">
+                <h2>Where I've worked</h2>
+      </div>
+
+      <div class="timeline">
+        <div class="tl-item reveal">
+          <span class="tl-dot"></span>
+          <div class="tl-head">
+            <span class="tl-role">SEO Specialist &amp; WordPress Webmaster</span>
+            <span class="tl-date">Jan 2022 - Dec 2025</span>
+          </div>
+          <p class="tl-org">Klimastal AS &middot; Norwegian industrial company, remote</p>
+          <ul class="tl-list">
+            <li>Owned end-to-end SEO strategy, technical, on-page and off-page, contributing to a 30% increase in organic search traffic over the engagement.</li>
+            <li>Ran technical SEO audits with Screaming Frog and SEMrush, resolving crawl errors, duplicate content and canonical conflicts.</li>
+            <li>Diagnosed a Core Web Vitals failure (16.3s mobile LCP) and drove desktop performance from 68/100 to 96/100 across four checkpoints.</li>
+            <li>Built and organized a 2,011-domain link-building prospect database, categorized by source type for outreach.</li>
+            <li>Implemented schema markup across key templates and monitored Core Web Vitals (LCP, FID, CLS).</li>
+            <li>Owned GA4 and Search Console reporting for senior stakeholders; supported international lead-generation tied to supplier visits in Dubai and Turkiye.</li>
+            <li>Rebuilt and administered the company WordPress site: themes, plugins, hosting migrations, SSL and mobile responsiveness.</li>
+          </ul>
+        </div>
+
+        <div class="tl-item reveal">
+          <span class="tl-dot"></span>
+          <div class="tl-head">
+            <span class="tl-role">WordPress Developer &amp; SEO Specialist</span>
+            <span class="tl-date">Jun 2020 - Dec 2021</span>
+          </div>
+          <p class="tl-org">Hybrid Tech PK</p>
+          <ul class="tl-list">
+            <li>Built and optimized WordPress sites for healthcare and e-commerce clients, including booking systems, event calendars and WooCommerce storefronts.</li>
+            <li>Applied on-page SEO fundamentals: meta optimization, heading structure, internal linking and image alt text.</li>
+            <li>Configured WooCommerce payment gateways and product catalog management.</li>
+            <li>Maintained cross-device responsive design and performed page-speed optimization.</li>
+          </ul>
+        </div>
+
+        <div class="tl-item reveal">
+          <span class="tl-dot"></span>
+          <div class="tl-head">
+            <span class="tl-role">Web Development &amp; SEO Intern</span>
+            <span class="tl-date">Aug 2019 - May 2020</span>
+          </div>
+          <p class="tl-org">Mirrors Innovation</p>
+          <ul class="tl-list">
+            <li>Assisted with WordPress theme development and Elementor-based landing page design.</li>
+            <li>Contributed to on-page SEO implementations that improved organic traffic for client sites.</li>
+            <li>Set up e-commerce product listings on WooCommerce and Shopify with basic SEO configuration.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<style>
+/* ============================================================
+   CERTIFICATIONS - single panel, grouped rows (deliberately not
+   a card grid, so it doesn't repeat the Services layout family)
+   ============================================================ */
+.certs-panel{border:1px solid var(--border);background:var(--surface);}
+.cert-row{
+  display:grid;grid-template-columns:230px 1fr;gap:28px;padding:24px 28px;
+  border-bottom:1px solid var(--border);align-items:start;
+}
+.cert-row:last-child{border-bottom:none;}
+.cert-row-head{display:flex;align-items:center;gap:12px;}
+.cert-icon{
+  height:42px;min-width:42px;max-width:96px;border-radius:9px;background:#fff;border:1px solid var(--border);
+  display:flex;align-items:center;justify-content:center;flex-shrink:0;padding:5px 9px;box-sizing:border-box;
+}
+.cert-icon img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;display:block;}
+.cert-icon svg{width:15px;height:15px;}
+.cert-row h3{font-size:14.5px;line-height:1.3;font-family:var(--font-body);font-weight:600;}
+.cert-row .issuer-count{font-family:var(--font-mono);font-size:10.5px;color:var(--text-faint);text-transform:uppercase;letter-spacing:.04em;}
+.cert-tags{display:flex;flex-wrap:wrap;gap:8px;align-content:flex-start;}
+.cert-tags span{font-family:var(--font-mono);font-size:12px;color:var(--text-dim);border:1px solid var(--border);padding:5px 11px;border-radius:var(--radius-pill);}
+
+@media (max-width:700px){
+  .cert-row{grid-template-columns:1fr;gap:12px;}
+}
+</style>
+
+  <section id="certifications" class="tight">
+    <div class="wrap">
+      <div class="section-head reveal">
+                <h2>Certifications</h2>
+        <p class="sub">Twelve courses across six issuers, grouped here the way they were actually earned rather than as one long undifferentiated list.
+          <strong> Continuous learning. Verified credentials. Practical expertise. </strong>
+          A curated collection of professional certifications and completed courses spanning SEO, Local Search, Analytics, Python, Data Analysis, and emerging AI search technologies.
+        </p>
+      </div>
+      <div class="certs-panel reveal">
+
+        <div class="cert-row">
+          <div class="cert-row-head">
+            <div class="cert-icon"><img src="images/google-analytics.png" alt="Google Analytics certified badge" loading="lazy"></div>
+            <div><h3>Google</h3><span class="issuer-count">1 certificate</span></div>
+          </div>
+          <div class="cert-tags"><span>Google Analytics Certification</span></div>
+        </div>
+
+        <div class="cert-row">
+          <div class="cert-row-head">
+            <div class="cert-icon"><img src="images/uc-davis.svg" alt="University of California, Davis logo" loading="lazy"></div>
+            <div><h3>UC Davis, via Coursera</h3><span class="issuer-count">3 certificates</span></div>
+          </div>
+          <div class="cert-tags">
+            <span>Google SEO Fundamentals</span>
+            <span>Optimizing a Website for Google Search</span>
+            <span>Google SEO Capstone Project</span>
+          </div>
+        </div>
+
+        <div class="cert-row">
+          <div class="cert-row-head">
+            <div class="cert-icon"><img src="images/semrush.png" alt="Semrush Academy logo" loading="lazy"></div>
+            <div><h3>Semrush Academy</h3><span class="issuer-count">4 certificates</span></div>
+          </div>
+          <div class="cert-tags">
+            <span>International SEO</span>
+            <span>Local SEO Essentials</span>
+            <span>SEO Toolkit Crash Course</span>
+            <span>AI Search Operating System</span>
+          </div>
+        </div>
+
+        <div class="cert-row">
+          <div class="cert-row-head">
+            <div class="cert-icon"><img src="images/microsoft.svg" alt="Microsoft logo" loading="lazy"></div>
+            <div><h3>Microsoft, via Coursera</h3><span class="issuer-count">2 certificates</span></div>
+          </div>
+          <div class="cert-tags">
+            <span>Python Programming Fundamentals</span>
+            <span>Data Analysis &amp; Visualization with Python</span>
+          </div>
+        </div>
+
+        <div class="cert-row">
+          <div class="cert-row-head">
+            <div class="cert-icon"><img src="images/kiet-ai-ml.png" alt="KIET logo" loading="lazy"></div>
+            <div><h3>KIET, via NAVTTC</h3><span class="issuer-count">1 certificate</span></div>
+          </div>
+          <div class="cert-tags"><span>AI, Machine Learning &amp; Deep Learning</span></div>
+        </div>
+
+        <div class="cert-row">
+          <div class="cert-row-head">
+            <div class="cert-icon"><img src="images/anthropic.svg" alt="Anthropic logo" loading="lazy"></div>
+            <div><h3>Anthropic Academy</h3><span class="issuer-count">1 certificate</span></div>
+          </div>
+          <div class="cert-tags"><span>Claude 101</span></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+<style>
+/* ============================================================
+   CONTACT — direct CTA first, honest about being email/social
+   links rather than a server-backed form (per spec: don't imply
+   a backend that doesn't exist).
+   ============================================================ */
+.contact-cta-row{display:flex;flex-wrap:wrap;gap:14px;margin:8px 0 30px;}
+.contact-ref{display:flex;flex-wrap:wrap;gap:10px 22px;font-family:var(--font-mono);font-size:13px;color:var(--text-faint);}
+.contact-ref a{color:var(--text-dim);transition:color .2s ease;}
+.contact-ref a:hover{color:var(--teal);}
+.contact-ref .sep{color:var(--border-strong);}
+
+/* ============================================================
+   FINAL CTA — closing band, reinforces the primary positioning
+   one more time before the footer.
+   ============================================================ */
+.final-cta{background:var(--bg-elevated);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:68px 0;text-align:center;}
+.final-cta h2{font-size:clamp(24px,3.2vw,32px);max-width:680px;margin:0 auto 26px;line-height:1.35;}
+.final-cta .fc-actions{display:flex;justify-content:center;flex-wrap:wrap;gap:14px;}
+</style>
+
+  <section id="contact">
+    <div class="wrap">
+      <div class="section-head reveal">
+                <h2>Let's talk about your site</h2>
+        <p class="sub">Have an SEO, WordPress or website performance problem? I'd be happy to discuss it.</p>
+      </div>
+
+      <div class="contact-cta-row reveal">
+        <a href="mailto:hamzamajeed.hm1996@gmail.com" class="btn btn-primary">
+          Email Hamza
+          <span class="btn-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M3 6h18v12H3z"/><path d="M3 7l9 6 9-6"/></svg></span>
+        </a>
+        <a href="https://www.linkedin.com/in/hamza-majeed98" target="_blank" rel="noopener" class="btn btn-ghost">
+          LinkedIn
+          <span class="btn-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 10v7M7 7v.01M12 17v-4.5a1.5 1.5 0 0 1 3 0V17M12 12.5v0"/></svg></span>
+        </a>
+        <a href="https://wa.me/923406744625" target="_blank" rel="noopener" class="btn btn-ghost">
+          WhatsApp
+          <span class="btn-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20.5 11.9a8.4 8.4 0 0 1-12.3 7.4L4 20.5l1.3-4a8.4 8.4 0 1 1 15.2-4.6Z"/><path d="M9 10.4c0 3.2 2.6 5.6 5.6 5.6l.5-1.9-2-1-1 1.1a5.1 5.1 0 0 1-2.2-2.2l1.1-1-1-2-1.9.5Z"/></svg></span>
+        </a>
+      </div>
+
+      <p class="contact-ref reveal">
+        <a href="mailto:hamzamajeed.hm1996@gmail.com">hamzamajeed.hm1996@gmail.com</a>
+        <span class="sep">&middot;</span>
+        <a href="tel:+923406744625">+92 340 674 4625</a>
+        <span class="sep">&middot;</span>
+        <span>Karachi, Pakistan</span>
+      </p>
+    </div>
+  </section>
+
+  <section class="final-cta" aria-label="Get in touch">
+    <div class="wrap">
+      <h2>Need someone who can diagnose the SEO problem and actually fix it?</h2>
+      <div class="fc-actions">
+        <a href="#contact" class="btn btn-primary">
+          Get in touch
+          <span class="btn-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+        <a href="Hamza_Majeed_Resume.pdf" download class="btn btn-ghost">Download resume</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap footer-inner">
+    <div>
+      <p>&copy; <span id="year"></span> Hamza Majeed</p>
+      <p class="footer-role">SEO Specialist &middot; WordPress Webmaster</p>
+    </div>
+    <div class="footer-links">
+      <a href="#home">Back to top &uarr;</a>
+    </div>
+  </div>
+</footer>
+
+<style>
+/* ============================================================
+   FOOTER
+   ============================================================ */
+footer{border-top:1px solid var(--border);padding:30px 0;}
+.footer-inner{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;}
+.footer-inner p{font-family:var(--font-mono);font-size:12.5px;color:var(--text-faint);line-height:1.6;}
+.footer-role{color:var(--text-faint);opacity:.75;}
+.footer-links{display:flex;gap:18px;}
+.footer-links a{font-family:var(--font-mono);font-size:12.5px;color:var(--text-faint);transition:color .2s ease;}
+.footer-links a:hover{color:var(--teal);}
+</style>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ---------- Theme toggle ---------- */
+  var root = document.body;
+  var toggle = document.getElementById('themeToggle');
+  var stored = null;
+  try { stored = localStorage.getItem('hm-theme'); } catch(e){}
+  var prefersLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
+  var initial = stored || (prefersLight ? 'light' : 'dark');
+  root.setAttribute('data-theme', initial);
+
+  toggle.addEventListener('click', function(){
+    var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    try { localStorage.setItem('hm-theme', next); } catch(e){}
+  });
+
+  /* ---------- Nav opacity/blur, tied to scroll position via IntersectionObserver
+     (not a scroll listener) - sentinel height maps to the fade distance, and
+     intersectionRatio drives a continuous --nav-progress custom property so the
+     header glass effect ramps in smoothly instead of snapping on at a fixed point. ---------- */
+  var nav = document.getElementById('siteNav');
+  var sentinel = document.getElementById('navSentinel');
+  if ('IntersectionObserver' in window && sentinel) {
+    var steps = [];
+    for (var s = 0; s <= 40; s++) steps.push(s / 40);
+    var navIO = new IntersectionObserver(function(entries){
+      var ratio = entries[0].intersectionRatio;
+      var progress = Math.min(1, Math.max(0, 1 - ratio));
+      nav.style.setProperty('--nav-progress', progress.toFixed(3));
+    }, { threshold: steps });
+    navIO.observe(sentinel);
+  } else if (nav) {
+    nav.style.setProperty('--nav-progress', '1');
+  }
+
+  /* ---------- Mobile menu ---------- */
+  var menuToggle = document.getElementById('menuToggle');
+  var mobilePanel = document.getElementById('mobilePanel');
+  menuToggle.addEventListener('click', function(){
+    var open = mobilePanel.classList.toggle('open');
+    menuToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  mobilePanel.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){
+      mobilePanel.classList.remove('open');
+      menuToggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  /* ---------- Scroll reveal ---------- */
+  var revealEls = document.querySelectorAll('.reveal:not(.in)');
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+    revealEls.forEach(function(el){ io.observe(el); });
+  } else {
+    revealEls.forEach(function(el){ el.classList.add('in'); });
+  }
+
+  /* ---------- Klimastal performance chart bars ---------- */
+  var perfBars = document.querySelectorAll('.perf-bar');
+  var maxScore = 100;
+  if ('IntersectionObserver' in window && perfBars.length) {
+    var perfIO = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if (entry.isIntersecting) {
+          perfBars.forEach(function(pb){
+            var score = parseFloat(pb.getAttribute('data-score')) || 0;
+            var bar = pb.querySelector('.bar');
+            if (bar) bar.style.height = Math.max(24, (score / maxScore) * 118) + 'px';
+          });
+          perfIO.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.3 });
+    perfIO.observe(perfBars[0]);
+  } else {
+    perfBars.forEach(function(pb){
+      var score = parseFloat(pb.getAttribute('data-score')) || 0;
+      var bar = pb.querySelector('.bar');
+      if (bar) bar.style.height = Math.max(24, (score / maxScore) * 118) + 'px';
+    });
+  }
+
+  /* ---------- Project accordions ---------- */
+  document.querySelectorAll('.project-head').forEach(function(head){
+    head.addEventListener('click', function(){
+      var card = head.closest('.project-card');
+      var wasOpen = card.classList.contains('open');
+      document.querySelectorAll('.project-card.open').forEach(function(c){
+        c.classList.remove('open');
+        c.querySelector('.project-head').setAttribute('aria-expanded', 'false');
+      });
+      if (!wasOpen) {
+        card.classList.add('open');
+        head.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+
+  /* ---------- Active-section indicator (scrollspy), IntersectionObserver-based,
+     no scroll listener. Drives the teal underline in the desktop nav and the
+     left-border highlight in the mobile drawer. ---------- */
+  var spySections = document.querySelectorAll('main section[id], #home');
+  var navAnchors = document.querySelectorAll('.nav-links a[data-section], .mp-link[data-section]');
+  if ('IntersectionObserver' in window && spySections.length) {
+    var spyIO = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if (!entry.isIntersecting) return;
+        var id = entry.target.id;
+        navAnchors.forEach(function(a){
+          a.classList.toggle('active', a.getAttribute('data-section') === id);
+        });
+      });
+    }, { rootMargin: '-45% 0px -50% 0px', threshold: 0 });
+    spySections.forEach(function(s){ spyIO.observe(s); });
+  }
+
+  /* ---------- Footer year ---------- */
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+})();
+</script>
+</body>
+</html>
