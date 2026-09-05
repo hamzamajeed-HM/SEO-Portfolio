@@ -1250,6 +1250,10 @@ header.site-nav{
    a card grid, so it doesn't repeat the Services layout family)
    ============================================================ */
 .certs-panel{border:1px solid var(--border);background:var(--surface);}
+.section-head .sub {
+  max-width: 100% !important; /* Removes the character/px width limit */
+  width: 100%;
+}
 .cert-row{
   display:grid;grid-template-columns:230px 1fr;gap:28px;padding:24px 28px;
   border-bottom:1px solid var(--border);align-items:start;
